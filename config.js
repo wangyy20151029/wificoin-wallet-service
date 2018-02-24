@@ -39,24 +39,11 @@ var config = {
   },
   blockchainExplorerOpts: {
     btc: {
-      livenet: {
-        provider: 'insight',
-        url: 'https://insight.bitpay.com:443',
-      },
-      testnet: {
-        provider: 'insight',
-        url: 'https://test-insight.bitpay.com:443',
-        // url: 'http://localhost:3001',
-        // Multiple servers (in priority order)
-        // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
-      },
-    },
-    bch: {
-      livenet: {
-        provider: 'insight',
-        url: 'https://cashexplorer.bitcoin.com',
-      },
-    },
+    livenet: {
+      provider: 'insight',
+      url: 'http://127.0.0.1:3001/',
+      apiPrefix:'insight-api'
+    }
   },
   pushNotificationsOpts: {
     templatePath: './lib/templates',
