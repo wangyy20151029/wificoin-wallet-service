@@ -1,11 +1,7 @@
 
-# bitcore-wallet-service
+# wificoin-wallet-service
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-service.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-service)
-[![Build Status](https://img.shields.io/travis/bitpay/bitcore-wallet-service.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-wallet-service)
-[![Coverage Status](https://coveralls.io/repos/bitpay/bitcore-wallet-service/badge.svg?branch=master)](https://coveralls.io/r/bitpay/bitcore-wallet-service?branch=master)
-
-A Multisig HD Bitcore Wallet Service.
+A Multisig HD Wificoin Wallet Service. fork from BWS
 
 # Description
 
@@ -21,8 +17,10 @@ More about BWS at https://blog.bitpay.com/announcing-the-bitcore-wallet-suite/
 
 # Getting Started
 ```
- git clone https://github.com/bitpay/bitcore-wallet-service.git
- cd bitcore-wallet-service && npm start
+ git clone https://github.com/KunTengRom/wificoin-wallet-service.git
+ cd wificoin-wallet-service
+ npm install
+ npm start
 ```
 
 
@@ -30,7 +28,7 @@ This will launch the BWS service (with default settings) at `http://localhost:32
 
 BWS needs mongoDB. You can configure the connection at `config.js`
 
-BWS supports SSL and Clustering. For a detailed guide on installing BWS with extra features see [Installing BWS](https://github.com/bitpay/bitcore-wallet-service/blob/master/installation.md). 
+BWS supports SSL and Clustering. For a detailed guide on installing BWS with extra features see [Installing BWS](https://github.com/KunTengRom/wificoin-wallet-service/blob/master/installation.md). 
 
 BWS uses by default a Request Rate Limitation to CreateWallet endpoint. If you need to modify it, check defaults.js' `Defaults.RateLimit`
 
