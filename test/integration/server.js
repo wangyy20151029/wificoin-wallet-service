@@ -10,7 +10,7 @@ var log = require('npmlog');
 log.debug = log.verbose;
 log.level = 'info';
 
-var Bitcore = require('bitcore-lib');
+var Bitcore = require('wificoin-lib');
 var Bitcore_ = {
   btc: Bitcore,
   bch: require('bitcore-lib-cash')

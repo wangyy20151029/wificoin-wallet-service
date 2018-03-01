@@ -39,10 +39,11 @@ var config = {
   },
   blockchainExplorerOpts: {
     btc: {
-    livenet: {
-      provider: 'insight',
-      url: 'http://127.0.0.1:3001/',
-      apiPrefix:'insight-api'
+        livenet: {
+        provider: 'insight',
+        url: 'http://127.0.0.1:3001/',
+        apiPrefix:'insight-api'
+        }
     }
   },
   pushNotificationsOpts: {
