@@ -40,10 +40,14 @@ var config = {
   blockchainExplorerOpts: {
     btc: {
         livenet: {
-        provider: 'insight',
-        url: 'http://127.0.0.1:3001/',
-        apiPrefix:'insight-api'
-        }
+    	    provider: 'insight',
+        	url: 'http://127.0.0.1:3001/',
+        	apiPrefix:'insight-api'
+        },
+		testnet: {
+			provider: 'insight',
+			url: 'https://test-insight.bitpay.com:443'
+		}
     }
   },
   pushNotificationsOpts: {
