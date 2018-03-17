@@ -4,14 +4,14 @@ var config = {
   port: 3232,
 
   // Uncomment to make BWS a forking server
-  // cluster: true,
+  cluster: true,
 
   // Uncomment to set the number or process (will use the nr of availalbe CPUs by default)
-  // clusterInstances: 4,
+  clusterInstances: 4,
 
-  // https: true,
-  // privateKeyFile: 'private.pem',
-  // certificateFile: 'cert.pem',
+  https: true,
+  privateKeyFile: '/opt/wificoin/cert/wfc.kunteng.org.key',
+  certificateFile: '/opt/wificoin/cert/wfc.kunteng.org.pem',
   ////// The following is only for certs which are not
   ////// trusted by nodejs 'https' by default
   ////// CAs like Verisign do not require this
@@ -27,8 +27,8 @@ var config = {
   lockOpts: {
     //  To use locker-server, uncomment this:
     lockerServer: {
-      host: 'localhost',
-      port: 3231,
+     host: 'localhost',
+     port: 3231,
     },
   },
   messageBrokerOpts: {
@@ -41,27 +41,23 @@ var config = {
     btc: {
         livenet: {
     	    provider: 'insight',
-        	url: 'http://127.0.0.1:3001/',
+        	url: 'https://wfc.kunteng.org:3001/',
         	apiPrefix:'insight-api'
         },
-		testnet: {
-			provider: 'insight',
-			url: 'https://test-insight.bitpay.com:443'
-		}
     }
   },
-  pushNotificationsOpts: {
-    templatePath: './lib/templates',
-    defaultLanguage: 'en',
-    defaultUnit: 'btc',
-    subjectPrefix: '',
-    pushServerUrl: 'https://fcm.googleapis.com/fcm',
-    authorizationKey: '',
-  },
-  fiatRateServiceOpts: {
-    defaultProvider: 'BitPay',
-    fetchInterval: 60, // in minutes
-  },
+ // pushNotificationsOpts: {
+ //   templatePath: './lib/templates',
+ //   defaultLanguage: 'en',
+ //   defaultUnit: 'btc',
+ //   subjectPrefix: '',
+ //   pushServerUrl: 'https://fcm.googleapis.com/fcm',
+ //   authorizationKey: '',
+//  },
+//  fiatRateServiceOpts: {
+//    defaultProvider: 'BitPay',
+//    fetchInterval: 60, // in minutes
+//  },
   // To use email notifications uncomment this:
   // emailOpts: {
   //  host: 'localhost',
